@@ -25,7 +25,7 @@ const ServiceSection = () => {
   return (
     <>
       <SectionTitle>Services</SectionTitle>
-      <div className="mt-10 grid gap-8 md:grid-cols-3">
+      <div className="mt-10 grid gap-8 md:grid-cols-4">
         {services.map((service, index) => (
           <div
             key={index}
@@ -37,12 +37,6 @@ const ServiceSection = () => {
           </div>
         ))}
       </div>
-      <p className="mt-8 text-center">
-        Looking for a custom service?{' '}
-        <Link href="/contact">
-          <a>Click here to contact me! &#128079;</a>
-        </Link>
-      </p>
     </>
   );
 };

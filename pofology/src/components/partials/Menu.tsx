@@ -10,7 +10,7 @@ import { HiMenuAlt3 } from 'react-icons/hi';
 const Menu = () => {
   const router = useRouter();
   const [sidebarOpen, setSidebarOpen] = useState(false);
-  const { theme, toggleTheme } = useTheme();
+  const { theme } = useTheme();
   return (
     <header className="header text-gray-700 dark:text-gray-200">
       <div className="mx-auto flex h-16 max-w-7xl items-center px-4 md:px-6">
@@ -67,9 +67,7 @@ const Menu = () => {
         <button
           type="button"
           className="ml-auto transition-colors duration-150 hover:text-primary-500 md:-mt-0.5 md:ml-3"
-          onClick={() => toggleTheme()}
         >
-          {theme === Theme.LIGHT ? <BsMoonStars size={20} /> : <BsSun size={20} />}
         </button>
         <button
           type="button"

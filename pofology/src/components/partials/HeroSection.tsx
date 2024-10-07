@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
-import { FiDribbble, FiFacebook, FiGithub, FiInstagram, FiTwitter } from 'react-icons/fi';
+import { FiDribbble, FiFacebook, FiGithub, FiInstagram, FiLinkedin, FiMessageCircle, FiTwitter } from 'react-icons/fi';
 import Button from '@/components/form/Button';
 import HeroBackground from './HeroBackground';
 import Typed from 'react-typed';
@@ -12,47 +12,38 @@ const HeroSection = () => {
       <HeroBackground />
       <div className="flex flex-col items-center">
         <div className="overflow-hidden rounded-full">
-          <Image src="/images/avatar/man.png" width={180} height={180} alt="avatar" />
+          <Image src="/images/avatar/girl.png" width={200} height={200} alt="avatar" />
         </div>
-        <h1 className="mt-4 text-3xl font-bold ">Mostafizur Rahman</h1>
+        <h1 className="mt-4 text-3xl font-bold ">Tanvi Pulipaka</h1>
         <div className="mt-2 flex gap-1">
           {' '}
           I'm a{' '}
           <Typed
-            strings={['Fullstack Developer', 'UI/UX Designer', 'Mobile App Developer']}
+            strings={['Fullstack Developer', 'Mobile App Developer', 'AR/VR Developer']}
             typeSpeed={60}
             backSpeed={30}
             loop
           />
         </div>
         <div className="mt-4  flex gap-5">
-          <Link href="https://www.instragram.com">
+          <Link href="https://www.linkedin.com/in/tanvipulipaka/">
             <a className="text-gray-700 transition-colors duration-150 hover:text-primary-500">
-              <FiInstagram size={25} />
+              <FiLinkedin size={25} />
             </a>
           </Link>
-          <Link href="https://www.twitter.com">
-            <a className="text-gray-700 transition-colors duration-150 hover:text-primary-500">
-              <FiTwitter size={25} />
+          <Link href="https://www.gmail.com">
+            <a href="mailto:tanvipulipaka@gmail.com" className="text-gray-700 transition-colors duration-150 hover:text-primary-500">
+              <FiMessageCircle size={25} />
             </a>
           </Link>
-          <Link href="https://www.facebook.com">
-            <a className="text-gray-700 transition-colors duration-150 hover:text-primary-500">
-              <FiFacebook size={25} />
-            </a>
-          </Link>
-          <Link href="https://www.dribble.com">
-            <a className="text-gray-700 transition-colors duration-150 hover:text-primary-500">
-              <FiDribbble size={25} />
-            </a>
-          </Link>
-          <Link href="https://www.github.com">
+          
+          <Link href="https://www.github.com/tanvip9/">
             <a className="text-gray-700 transition-colors duration-150 hover:text-primary-500">
               <FiGithub size={25} />
             </a>
           </Link>
         </div>
-        <Button className="mt-5 px-8">Hire Me</Button>
+        <a href="https://www.linkedin.com/in/tanvipulipaka/"><Button className="mt-5 px-8">Connect with Me !</Button></a>
       </div>
 
       <div className="absolute bottom-0 flex flex-col items-center ">

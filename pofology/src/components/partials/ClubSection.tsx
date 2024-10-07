@@ -6,10 +6,10 @@ import { FiBriefcase } from 'react-icons/fi';
 import AcademicCap from '@/components/icons/AcademicCap';
 import SectionTitle from '@/components/shared/SectionTitle';
 
-const ExperienceSection = () => {
+const ClubSection = () => {
   return (
     <>
-      <SectionTitle>Experiences & Educations</SectionTitle>
+      <SectionTitle>Leadership</SectionTitle>
       <div className="py-15 mt-10 grid gap-8 md:grid-cols-2">
         {/* Experience */}
         <div>
@@ -56,21 +56,6 @@ const ExperienceSection = () => {
                     {education.school}
                   </p>
                   <p className="mb-4 text-base font-normal text-gray-500 dark:text-gray-200">{education.description}</p>
-                  <h4 className="mb-1 flex items-center text-lg font-semibold dark:text-gray-200">
-                    Activities
-                  </h4>
-                  <p className="mb-2 block text-sm font-normal leading-none text-gray-400 dark:text-gray-200">
-                    {education.activities}
-                  </p>
-                  
-
-                  <p className="mb-2 block text-sm font-normal leading-none text-gray-400 dark:text-gray-200">
-                    <ul className="list-disc pl-5"> {/* Use an unordered list */}
-                      {education.activities.split(', ').map((activity, index) => (
-                        <li key={index}>{activity}</li> // Create a list item for each activity
-                      ))}
-                    </ul>
-                  </p>
                 </li>
               ))}
             </ol>
@@ -81,4 +66,4 @@ const ExperienceSection = () => {
   );
 };
 
-export default ExperienceSection;
+export default ClubSection;

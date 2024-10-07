@@ -14,6 +14,7 @@ export type Education = {
   startDate: string;
   endDate: string;
   description: string;
+  activities: string;
 };
 
 export type Service = {
