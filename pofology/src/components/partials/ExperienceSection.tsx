@@ -49,28 +49,25 @@ const ExperienceSection = () => {
                   <time className="mb-2 block text-sm font-normal leading-none text-gray-400 dark:text-gray-200">
                     {education.startDate} - {education.endDate}
                   </time>
+                  
                   <h3 className="mb-1 flex items-center text-lg font-semibold dark:text-gray-200">
                     {education.degree}
                   </h3>
+
                   <p className="mb-2 block text-sm font-normal leading-none text-gray-400 dark:text-gray-200">
                     {education.school}
                   </p>
                   <p className="mb-4 text-base font-normal text-gray-500 dark:text-gray-200">{education.description}</p>
+
                   <h4 className="mb-1 flex items-center text-lg font-semibold dark:text-gray-200">
                     Activities
                   </h4>
-                  <p className="mb-2 block text-sm font-normal leading-none text-gray-400 dark:text-gray-200">
-                    {education.activities}
-                  </p>
-                  
 
-                  <p className="mb-2 block text-sm font-normal leading-none text-gray-400 dark:text-gray-200">
-                    <ul className="list-disc pl-5"> {/* Use an unordered list */}
-                      {education.activities.split(', ').map((activity, index) => (
-                        <li key={index}>{activity}</li> // Create a list item for each activity
-                      ))}
-                    </ul>
-                  </p>
+                  <ul className="list-disc pl-5"> {/* Use an unordered list */}
+                    {education.activities.split(', ').map((activity, index) => (
+                      <li key={index}>{activity}</li> // Create a list item for each activity
+                    ))}
+                  </ul>
                 </li>
               ))}
             </ol>

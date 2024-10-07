@@ -164,7 +164,7 @@ export const works: Work[] = [
     ],
   },
   {
-    id: 3,
+    id: 8,
     title: 'Optimized Cabin Crew Allocation Model',
     category: 'Predictive Modeling',
     thumbnailUrl: '/images/posts/crew.png',
